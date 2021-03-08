@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6dd4a30c4e.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/styles/css/main.css" />
+    <title>Prueba Front-end (VIXICOM)</title>
+</head>
+
+<body>
+    <div class="container px-0">
+        <header>
+            <div class="topbar">
+                <div class="row">
+                    <div class="d-none d-md-block col-sm-12 col-lg-6">
+                        <ul class="topbar__links">
+                            <li class="topbar__item"><a href="#">Contact</a></li>
+                            <li class="topbar__item">
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:info@info.com">Info@info.com</a>
+                            </li>
+                            <li class="topbar__item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:1-800-500-0000">1-800-555-0000</a>
+                            </li>
+                            <li class="topbar__item"><i class="fab fa-facebook-f"></i></li>
+                            <li class="topbar__item"><i class="fab fa-twitter"></i></li>
+                            <li class="topbar__item"><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <ul class="topbar__links justify-content-center justify-content-md-end">
+                            <li class="topbar__item">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Idioma</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Español</a>
+                                            <a class="dropdown-item" href="#">Ingles</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="topbar__item">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <a href="#">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="container-fluid">
+                    <div class="row align-items-center justify-content-md-center">
+                        <div class="menu__logo col-12 col-lg-2 col-xl-2">
+                            <a href="#"
+                                class="d-flex align-items-center justify-content-center justify-content-md-start my-5 my-md-0">
+                                <img src="src/assets/images/alivialabslogo.png" alt="">
+                            </a>
+                        </div>
+                        <nav class="menu__nav col">
+                            <div class="col-12 align-items-md-center justify-content-center">
+                                <a class="menu__nav__link active" href="#">Home</a>
+                                <div class="dropdown">
+                                    <a class="menu__nav__link" href="#">Products <i
+                                            class="fas fa-chevron-down icon"></i></a>
+
+                                    <div class="dropdown__menu hide">
+                                        <a class="menu__nav__link dropdown-link" href="#">Enlace #1</a>
+                                        <a class="menu__nav__link dropdown-link" href="#">Enlace #2</a>
+                                    </div>
+                                </div>
+                                <a class="menu__nav__link" href="#">About Us</a>
+                            </div>
+                        </nav>
+
+                        <!-- CARRITO DE COMPRAS -->
+                        <div class="ecommerce-icons col-6 col-lg-2 col-xl-2 d-flex flex-row-reverse">
+                            <!-- <div class="shopping-card">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="shopping-card__item-counter">0</span>
+                            </div>
+                            <div class="liked-items">
+                                <i class="fas fa-heart"></i>
+                                <span class="liked-items__item-counter">0</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECCION PRINCIPAL -->
+        <main class="main container px-0">
+            <!-- HERO -->
+            <div class="hero row align-items-center">
+                <div class="hero__img col-12 col-md-6">
+                    <img class="a-fade-in-and-rotate" src="src/assets/images/PlatesFix.png.webp" alt="">
+                </div>
+                <div class="hero__info col-12 col-md-6">
+                    <h1 class="heading-primary u-margin-bottom-medium">
+                        <span class="">Planes Alimenticios</span>
+                        <span class="green-text">Personalizados</span>
+                    </h1>
+                    <p class="paragraph u-margin-bottom-medium">Obtén un plan de alimentación ajustado a tus gustos y
+                        preferencias
+                        confeccionado por un doctor en
+                        nutrición.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Empieza Ya</a>
+                </div>
+            </div>
+
+            <!-- ARTICULOS -->
+            <section class="cards container">
+                <div class="row align-items-center justify-content-center">
+                    <article class="card col-12 col-md-3 ">
+                        <div class="card__head">
+                            <a href="#">
+                                <img src="src/assets/images/al4.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <h2 class="card__title">Ayuno Intermitente - En Qué...</h2>
+                            <p class="card__text">Existen muchas maneras de mantener dietas diferentes, por lo que no se
+                                sabe con certeza cuáles son los beneficios o…</p>
+                            <a class="btn btn-primary" href="#">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-md-3 d-none d-md-block">
+                        <div class="card__head">
+                            <a href="#">
+                                <img src="src/assets/images/al3.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <h2 class="card__title">Enfermedad Celíaca: Consejos Nutricionales</h2>
+                            <p class="card__text">Existen muchas maneras de mantener dietas diferentes, por lo que no se
+                                sabe con certeza cuáles son los beneficios o…</p>
+                            <a class="btn btn-primary" href="#">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-md-3 d-none d-md-block">
+                        <div class="card__head">
+                            <a href="#">
+                                <img src="src/assets/images/al2.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <h2 class="card__title">COVID-19 en Personas con Enfermedad...</h2>
+                            <p class="card__text">Existen muchas maneras de mantener dietas diferentes, por lo que no se
+                                sabe con certeza cuáles son los beneficios o…</p>
+                            <a class="btn btn-primary" href="#">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-md-3 d-none d-md-block">
+                        <div class="card__head">
+                            <a href="#">
+                                <img src="src/assets/images/al1.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <h2 class="card__title">Alimentos con Hierro Para Evitar...</h2>
+                            <p class="card__text">Existen muchas maneras de mantener dietas diferentes, por lo que no se
+                                sabe con certeza cuáles son los beneficios o…</p>
+                            <a class="btn btn-primary" href="#">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CARACTERISTICA #1: Peso, salud & energia... -->
+            <div class="feature row align-items-center flex-column-reverse flex-md-row">
+                <div class="feature__info col-12 col-md-8 d-flex-column">
+                    <h2 class="heading-tertiary u-margin-bottom-medium text-right">
+                        <span>Tu peso, salud y energía</span>
+                        <span class="green-text-bold">en constante armonía.</span>
+                    </h2>
+                    <p class="paragraph u-margin-bottom-medium text-right">Nuestros planes alimenticios son hechos a tu
+                        medida para
+                        que puedas comer lo que te gusta y no sigas dietas creadas para todo el mundo.
+                        Estos planes son diseñados por nuestro equipo de médicos nutricionistas que harán una evaluación
+                        completa y personalizada para ti o cada uno de los miembros de tu familia</p>
+                    <div class="btn-wrapper row justify-content-end">
+                        <a href="#" class="btn btn-primary">Empieza Ya</a>
+                    </div>
+                </div>
+                <div class="feature__img col-12 col-md-4">
+                    <img src="src/assets/images/tableFood-1.png.webp" alt="">
+                </div>
+            </div>
+
+            <!-- PRECIOS -->
+            <div class="pricing u-margin-bottom-big">
+                <div class="heading u-margin-bottom-big d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="heading-tertiary text-center">
+                        <span>No es dieta,</span>
+                        <br>
+                        <span class="green-text-bold">es mejorar tu salud</span>
+                    </h2>
+                    <p class="text-center paragraph paragraph--condensed">Si estás buscando perder peso, tener una
+                        alimentación
+                        más
+                        saludable, aumentar
+                        de peso o proveerle
+                        a tu cuerpo con los nutrientes necesarios entonces Alivia Nutrición es la respuesta para ti.</p>
+                </div>
+                <div class="pricing-container row justify-content-center">
+                    <div class="pricing-card col-md-3">
+                        <div class="pricing-card__img">
+                            <img src="src/assets/images/SilverResized.png.webp" alt="">
+                        </div>
+                        <h3 class="pricing-card__title">Plan Silver</h3>
+                        <span class="pricing-card__price">$199.95</span>
+                        <ul class="pricing-card__table">
+                            <li class="item"><i class="fa fa-check-circle"></i>Kit de bienvenida</li>
+                            <li class="item"><i class="fa fa-check-circle"></i>Consultas Ilimitadas por 6 mes</li>
+                            <li class="item"><i class="fa fa-check-circle"></i>2 tratamientos gratis</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Iniciar ahora</a>
+                    </div>
+                    <div class="pricing-card pricing-card--custom col-md-3">
+                        <div class="pricing-card__img--resized">
+                            <img src="src/assets/images/silverPlus.png.webp" alt="">
+                        </div>
+                        <h3 class="pricing-card__title">Plan Silver + Báscula</h3>
+                        <span class="pricing-card__price">$249.95</span>
+                        <ul class="pricing-card__table">
+                            <li class="item"><i class="fa fa-check-circle"></i>Kit de bienvenida</li>
+                            <li class="item"><i class="fa fa-check-circle"></i>Consultas Ilimitadas por 6 mes</li>
+                            <li class="item"><i class="fa fa-check-circle"></i>Báscula digital personal</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Iniciar ahora</a>
+                    </div>
+                    <div class="pricing-card col-md-3">
+                        <div class="pricing-card__img">
+                            <img src="src/assets/images/GoldResized.png.webp" alt="">
+                        </div>
+                        <h3 class="pricing-card__title">Plan Gold</h3>
+                        <span class="pricing-card__price">$289.40</span>
+                        <ul class="pricing-card__table">
+                            <li class="item"><i class="fa fa-check-circle"></i>Kit de bienvenida</li>
+                            <li class="item"><i class="fa fa-check-circle"></i>Consultas Ilimitadas por 6 mes</li>
+                            <li class="item"><i class="fa fa-check-circle"></i>2 suplementos gratuitos</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Iniciar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARACTERISTICA #2: Es timepo de balancear tu vida -->
+            <div class="feature--2 row align-items-center flex-row-reverse u-margin-bottom-big">
+                <div class="feature__info col-12 col-md-6 d-flex-column">
+                    <h2 class="heading-tertiary u-margin-bottom-medium text-right ">
+                        <span class="red-text">Es tiempo de</span>
+                        <span class="red-text-bold">balancear tu vida</span>
+                    </h2>
+                    <p class="paragraph u-margin-bottom-medium text-right">Nuestro trabajo no es elaborado por
+                        nutricionistas sino por médicos nutricionistas que harán una evaluación personalizada para ti o
+                        cada uno de los miembros de tu familia.</p>
+                    <div class="btn-wrapper row justify-content-end">
+                        <a href="#" class="btn btn-primary">Empieza Ya</a>
+                    </div>
+                </div>
+                <div class="feature__img col-12 col-md-6">
+                    <img src="src/assets/images/hamburguesa-alivia.png.webp" alt="">
+                </div>
+            </div>
+
+            <!-- CARACTERISTICAS #3: Linea Directa, Seguimiento... -->
+            <div class="feature--3 row align-items-center justify-content-center">
+                <div class="card col-12 col-md-3">
+                    <div class="card__icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="card__info">
+                        <h3>Linea Directa</h3>
+                        <p>Nuestros nutricionistas siempre están disponibles para ti.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3">
+                    <div class="card__icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card__info">
+                        <h3>Seguimiento</h3>
+                        <p>Evaluamos tu trayectoria constantemente.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3">
+                    <div class="card__icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="card__info">
+                        <h3>Resultados</h3>
+                        <p>Más de 2,000 clientes se han beneficiado en los últimos meses.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3">
+                    <div class="card__icon">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <div class="card__info">
+                        <h3>Consulta Gratis</h3>
+                        <p>La primera consulta es completamente gratuita.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARACTERISTICA #4: Es timepo de balancear tu vida -->
+            <div class="feature--4 row align-items-center flex-row-reverse">
+                <div class="feature__info col-12 col-md-6 d-flex-column">
+                    <h2 class="heading-tertiary u-margin-bottom-medium text-left ">
+                        <span class="red-text">Vamos a dar tu</span>
+                        <span class="green-text-bold">primer paso.</span>
+                    </h2>
+                    <p class="paragraph u-margin-bottom-medium text-left ml-5">Nuestro trabajo no es elaborado por
+                        nutricionistas sino por médicos nutricionistas que harán una evaluación personalizada para ti o
+                        cada uno de los miembros de tu familia.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Empieza Ya</a>
+                </div>
+            </div>
+
+            <!-- SUPLEMENTOS -->
+            <div class="suplements u-margin-bottom-big">
+                <div class="heading u-margin-bottom-big d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="heading-tertiary text-center">
+                        <span class="green-text-bold">Suplementos</span>
+                    </h2>
+                    <p class="text-center paragraph paragraph--condensed">Una alimentacion completa que sera elaborada
+                        entorno a tus gustos y preferencias.</p>
+                </div>
+
+                <div class="suplements-container row">
+                    <div class="suplement col-12 col-md-4 mb-5 mb-md-0">
+                        <div class="suplement__img">
+                            <img src="src/assets/images/1.webp" alt="">
+                        </div>
+                        <h3 class="suplement__title">Zinc</h3>
+                        <h4 class="suplement__category">Suplementos</h4>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+
+                    <div class="suplement col-12 col-md-4 mb-5 mb-md-0">
+                        <div class="suplement__img">
+                            <img src="src/assets/images/2.webp" alt="">
+                        </div>
+                        <h3 class="suplement__title">Vitamina C</h3>
+                        <h4 class="suplement__category">Suplementos</h4>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+
+                    <div class="suplement col-12 col-md-4 mb-5 mb-md-0">
+                        <div class="suplement__img">
+                            <img src="src/assets/images/3.webp" alt="">
+                        </div>
+                        <h3 class="suplement__title">Vitamina E</h3>
+                        <h4 class="suplement__category">Suplementos</h4>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <img class="logo u-margin-bottom-small" src="src/assets/images/logoAlivia-300x171.png"
+                                alt="">
+                            <p class="u-margin-bottom-medium">Una alimentación completa que sera elaorada entorno a tus
+                                gustos y tus preferencias.</p>
+                            <img class="payments-img u-margin-bottom-medium" src="src/assets/images/Payments.png"
+                                alt="">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="contact u-margin-bottom-medium">
+                                <h2 class="heading-secondary u-margin-bottom-medium">Contacto</h2>
+
+                                <ul class="contact__list-item">
+                                    <li class="contact__item">
+                                        <i class="fas fa-phone"></i>
+                                        <a href="tel:1-800-500-0000">1-800-555-0000</a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="mailto:info@info.com">info@info.com</a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <a href="https://www.google.com/maps/place/132+NW+17th+St+%23132,+Miami,+FL+33136,+USA/data=!4m2!3m1!1s0x88d9b6a569ac8db7:0x3921d36adcb7f52?sa=X&ved=2ahUKEwitxJCIy9LtAhVR11kKHfTmBdAQ8gEwAHoECAEQAQ"
+                                            target="_black">10891 NW 17th St Unit 132, Miami FL 33172 Unit 132</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="information">
+                                <h2 class="heading-secondary u-margin-bottom-medium">Información</h2>
+
+                                <ul class="information__list-item">
+                                    <li class="information__item">
+                                        <a href="#">Sobre Nosotros</a>
+                                    </li>
+                                    <li class="information__item">
+                                        <a href="#">Política de privacidad</a>
+                                    </li>
+                                    <li class="information__item">
+                                        <a href="#">Política General de envíos</a>
+                                    </li>
+                                    <li class="information__item">
+                                        <a href="#">Términos y condiciones</a>
+                                    </li>
+                                    <li class="information__item">
+                                        <a href="#">Contactanos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>AliviaNutricion © 2021 - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="src/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

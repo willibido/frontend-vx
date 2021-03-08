@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"');
+
+.heading-primary {
+    font-weight: 600;
+    font-size: 8rem;
+}
+
+.heading-secondary {
+    font-weight: 600;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.heading-tertiary {
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.heading-quaternary {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.green-text {
+    color: $primary-color;
+}
+
+.green-text-bold {
+    @extend .green-text;
+    font-weight: 600;
+}
+
+.red-text {
+    color: $red-color;
+    font-weight: 400;
+}
+
+.red-text-bold {
+    @extend .red-text;
+    font-weight: 600 !important;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+
+    &--condensed {
+        width: 80rem;
+    }
+}

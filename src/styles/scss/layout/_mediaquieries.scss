@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+    // body {
+    //     background-color: salmon;
+    // }
+}
+
+@media screen and (max-width: 575px) {
+    // body {
+    //     background-color: slateblue;
+    // }
+
+    // TYPOGRAPHY
+    .heading-primary {
+        font-size: 5rem !important;
+        text-align: center !important;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-tertiary {
+        font-size: 4rem !important;
+        text-align: center !important;
+    }
+
+    .paragraph, .paragraph--condensed {
+        text-align: center !important;
+        padding: 0 2rem;
+        width: auto;
+    }
+
+    // CARDS
+    article.card {
+        max-width: 40rem;
+    }
+
+    .card:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    // PRICIN-CARDS
+    .pricing-card {
+        &--custom {
+            transform: translateY(0rem);
+        }
+    }
+
+    .pricing-card:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    // FEATURES
+    .feature, .feature--2, .feature--4 {
+        padding: 0rem;
+    }
+
+    .feature--4 {
+        background-position-x: left;
+        background-size: 80rem;
+        
+        .feature__info {
+            transform: translateY(25rem);
+            height: 20rem;
+        }
+    }
+
+    .suplements {
+        transform: translateY(35rem);
+    }
+
+
+    footer {
+        transform: translateY(25rem);
+    }
+}

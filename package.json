@@ -1,0 +1,11 @@
+{
+  "name": "prueba_vixicom",
+  "version": "1.0.0",
+  "description": "Prueba Front-End Vixicom",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass --watch src/styles/scss/main.scss:src/styles/css/main.css"
+  },
+  "author": "Willi Bido",
+  "license": "ISC"
+}

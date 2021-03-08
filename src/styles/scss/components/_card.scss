@@ -1,0 +1,35 @@
+.card {
+    max-width: 28rem;
+    border-radius: 2.4rem;
+    padding: 0;
+    transform: translateY(-3rem);
+    box-shadow: $shadow-small;
+
+    &__head {
+        width: 100%;
+        min-height: 25rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+        img {
+            width: 200%;
+            transform: translateX(-10rem);
+        }
+    }
+
+    &__body {
+        padding: 4rem 1.5rem;
+
+        .card__title {
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .card__text {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.card:not(:last-child){
+    margin-right: 2rem;
+}

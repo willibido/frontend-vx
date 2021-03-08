@@ -1,0 +1,64 @@
+.pricing-card {
+    padding: 4rem 2rem;
+    box-shadow: $shadow-small;
+    border-radius: 1.5rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px rgba($color: $primary-color, $alpha: .5);
+
+    &__img {
+        margin-bottom: 4rem;
+        
+        img {
+            width: 15rem;
+        }
+
+        &--resized {
+            margin-bottom: 4rem;
+            
+            img {
+                width: 18rem;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 400;
+        color: $primary-color;
+        margin-bottom: 1.5rem;
+    }
+
+    &__price {
+        font-size: 2.2rem;
+        color: $primary-color;
+        margin-bottom: 1.5rem;
+    }
+
+    &__table {
+        text-align: left;
+        list-style: none;
+        color: $primary-color;
+
+        .item {
+            margin-bottom: 0.8rem;
+
+            i {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &--custom {
+        background-color: rgba($color: $light-green-color, $alpha: .2);
+        border-color: $primary-color;
+        transform: translateY(-5rem);
+    }
+}
+
+.pricing-card:not(:last-child){
+    margin-right: 4rem;
+}

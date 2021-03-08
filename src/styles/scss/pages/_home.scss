@@ -1,0 +1,149 @@
+.hero {
+    background-image: url("../../assets/images/BackGroundWelcome.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #f2f2f2;
+    
+    min-height: 100vh;
+    padding: 8rem;
+
+    &__img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 80%;
+            vertical-align: top;
+        }
+    }
+}
+
+.feature {
+    @extend .hero;
+    background-image: none;
+    background-color: #fff;
+    padding: 0;
+    padding-left: 8rem;
+
+    .feature__img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.feature--2 {
+    @extend .hero;
+    background-color: #fff;
+    background-image: url("../../assets/images/vegetalBackGround.png");
+    padding: 0;
+    padding-right: 8rem;
+
+    .feature__img {
+        width: 100%;
+
+        img {
+            width: 80%;
+            vertical-align: top;
+        }
+    }
+}
+
+.feature--3 {
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 1rem;
+        width: auto;
+        min-height: 11.41rem;
+
+        &__info {
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+        
+        i {
+            font-size: 4rem;
+            margin-right: 2rem;
+            color: #fff;
+        }
+    }
+
+    .card:not(:last-child){
+        margin-right: 1rem;
+    }
+
+    .card:nth-child(2), .card:nth-child(4) {
+        background-color: $light-red-color;
+    }
+
+    .card:nth-child(1), .card:nth-child(3) {
+        background-color: $light-green-color;
+    }
+}
+
+.feature--4 {
+    @extend .hero;
+    background-color: #fff;
+    background-image: url("../../assets/images/feets.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    padding: 0;
+    padding-right: 8rem;
+}
+
+.suplements {
+    background-image: url("src");
+
+    &-container {
+        .suplement {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__img {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            &__title {
+                color: $primary-color;
+                font-size: 2.5rem;
+                margin-top: 2rem;
+            }
+
+            &__category {
+                font-weight: 600;
+                font-size: 1.8rem;
+                opacity: 0.5;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

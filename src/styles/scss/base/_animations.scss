@@ -1,0 +1,17 @@
+// ==================
+//    ANIMATIONS    |
+// ==================
+
+.a-fade-in-and-rotate {
+    animation: rotation 300s linear infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
